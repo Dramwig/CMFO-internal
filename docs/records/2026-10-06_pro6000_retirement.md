@@ -23,14 +23,16 @@ Git remote：https://github.com/Dramwig/CMFO-internal.git。
 ## 验证
 
 归档前远端 Ruff lint 与 format 检查通过。无卡模式下 nvidia-smi 返回 Permission denied；未运行 GPU 任务。
-本次 CPU pytest 复验结果在本记录后续补充。
+本次 CPU pytest 单线程复验：35 passed in 154.40s；命令前缀 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1。首次默认线程复验因 167 线程争用被终止，不计为通过；无卡容器 CPU quota 为 0.5 核。
 既有实验均为 EXP-000 代码验证，不作为论文性能证据。
 
 ## Git 同步与恢复
 
-先在服务器提交，再将同一 Git 历史传回本地并推送 origin/main。
+已在服务器创建初始提交 4fa76555afd1b9541969d88a116e5e4df742f500，再以已验证 bundle 导入本地并推送 origin/main。
 服务器直连 GitHub 的 HTTPS 探测遇到 GnuTLS -110，因此允许由本机中转 push。
-提交完成后核对服务器 HEAD、本地主分支及 GitHub main 一致，并删除临时 bundle。
+本地通过系统现有代理 http://127.0.0.1:7897 成功推送。最终验证记录另作提交并同步服务器；核对三端 main 一致后删除两端中转 bundle。
 
 在新服务器 clone 仓库后，将 hub 内 checkpoints/<run_id> 恢复到项目 checkpoints/，
 将 records/<run_id> 恢复到仓库 outputs/smoke/，依据新环境调整 resolved_config 中的机器路径。
+
+本地旧 .venv 引用了已不存在的 C:/Users/zixi- Python，不能直接使用；本次测试在服务器执行，后续本地开发需重建虚拟环境。
