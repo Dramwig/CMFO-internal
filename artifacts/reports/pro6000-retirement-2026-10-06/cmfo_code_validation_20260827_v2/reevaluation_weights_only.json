@@ -1,0 +1,264 @@
+{
+  "checkpoint": "/root/autodl-tmp/CMFO/checkpoints/cmfo_code_validation_20260827_v2/best.pt",
+  "device": "cpu",
+  "efficiency": {
+    "latency_seconds_mean": 0.047104913741350174,
+    "parameters": 18777,
+    "samples_per_second": 42.45841550590373
+  },
+  "metrics": {
+    "accuracy": 0.0,
+    "classification_loss": 1.5122038125991821,
+    "dense_loss": 0.46577616035938263,
+    "ece": 0.33429673314094543,
+    "loss": 1.9779799580574036,
+    "miou": 0.0
+  },
+  "observation_grid_sweep": [
+    {
+      "accuracy": 0.0,
+      "class_probability_mse": 8.467865608707825e-08,
+      "classification_loss": 1.512498915195465,
+      "dense_loss": 0.4654928147792816,
+      "dense_probability_mse": 1.0630667617306244e-06,
+      "ece": 0.3344114124774933,
+      "image_resolution": 6,
+      "loss": 1.9779917001724243,
+      "miou": 0.0,
+      "observation_layout": "regular",
+      "reference_resolution": 10
+    },
+    {
+      "accuracy": 0.0,
+      "class_probability_mse": 7.53908508954737e-08,
+      "classification_loss": 1.512513518333435,
+      "dense_loss": 0.4658689796924591,
+      "dense_probability_mse": 1.5773974268995516e-06,
+      "ece": 0.3343152701854706,
+      "image_resolution": 8,
+      "loss": 1.9783824682235718,
+      "miou": 0.0,
+      "observation_layout": "regular",
+      "reference_resolution": 10
+    },
+    {
+      "accuracy": 0.0,
+      "class_probability_mse": 0.0,
+      "classification_loss": 1.5113889575004578,
+      "dense_loss": 0.46501895785331726,
+      "dense_probability_mse": 0.0,
+      "ece": 0.33432334661483765,
+      "image_resolution": 10,
+      "loss": 1.9764080047607422,
+      "miou": 0.0,
+      "observation_layout": "regular",
+      "reference_resolution": 10
+    },
+    {
+      "accuracy": 0.0,
+      "class_probability_mse": 2.5608954956624075e-07,
+      "classification_loss": 1.5123476386070251,
+      "dense_loss": 0.4614131599664688,
+      "dense_probability_mse": 1.0297811286363867e-05,
+      "ece": 0.33420220017433167,
+      "image_resolution": 6,
+      "loss": 1.9737608432769775,
+      "miou": 0.0,
+      "observation_layout": "random",
+      "reference_resolution": 10
+    },
+    {
+      "accuracy": 0.0,
+      "class_probability_mse": 1.8046991101527965e-07,
+      "classification_loss": 1.5103989839553833,
+      "dense_loss": 0.4639424830675125,
+      "dense_probability_mse": 1.535735509605729e-05,
+      "ece": 0.3343946933746338,
+      "image_resolution": 8,
+      "loss": 1.9743414521217346,
+      "miou": 0.0,
+      "observation_layout": "random",
+      "reference_resolution": 10
+    },
+    {
+      "accuracy": 0.0,
+      "class_probability_mse": 5.266327036679286e-07,
+      "classification_loss": 1.5132761001586914,
+      "dense_loss": 0.46511514484882355,
+      "dense_probability_mse": 3.7932854439759467e-06,
+      "ece": 0.33429041504859924,
+      "image_resolution": 10,
+      "loss": 1.9783912301063538,
+      "miou": 0.0,
+      "observation_layout": "random",
+      "reference_resolution": 10
+    }
+  ],
+  "quadrature_sweep": [
+    {
+      "accuracy": 0.0,
+      "class_probability_mse": 9.533221145829884e-07,
+      "dense_probability_mse": 8.737783900869545e-06,
+      "image_field_normalized_l2": 0.27569055557250977,
+      "image_nodes": 9,
+      "layout": "regular",
+      "miou": 0.0,
+      "text_field_normalized_l2": 0.31037628650665283,
+      "text_nodes": 8
+    },
+    {
+      "accuracy": 0.0,
+      "class_probability_mse": 6.78257783270908e-10,
+      "dense_probability_mse": 1.0938268957261243e-08,
+      "image_field_normalized_l2": 0.258639931678772,
+      "image_nodes": 16,
+      "layout": "regular",
+      "miou": 0.0,
+      "text_field_normalized_l2": 0.31039363145828247,
+      "text_nodes": 8
+    },
+    {
+      "accuracy": 0.0,
+      "class_probability_mse": 9.452413678445737e-07,
+      "dense_probability_mse": 8.136988981277682e-06,
+      "image_field_normalized_l2": 0.27569663524627686,
+      "image_nodes": 9,
+      "layout": "regular",
+      "miou": 0.0,
+      "text_field_normalized_l2": 0.22638924419879913,
+      "text_nodes": 12
+    },
+    {
+      "accuracy": 0.0,
+      "class_probability_mse": 0.0,
+      "dense_probability_mse": 0.0,
+      "image_field_normalized_l2": 0.2586364150047302,
+      "image_nodes": 16,
+      "layout": "regular",
+      "miou": 0.0,
+      "text_field_normalized_l2": 0.2263566255569458,
+      "text_nodes": 12
+    },
+    {
+      "accuracy": 0.0,
+      "class_probability_mse": 7.1248705353355035e-06,
+      "dense_probability_mse": 8.136731048580259e-05,
+      "image_field_normalized_l2": 0.2932009696960449,
+      "image_nodes": 9,
+      "layout": "jittered",
+      "miou": 0.0,
+      "text_field_normalized_l2": 0.32101869583129883,
+      "text_nodes": 8
+    },
+    {
+      "accuracy": 0.0,
+      "class_probability_mse": 4.027922841487452e-06,
+      "dense_probability_mse": 3.141548586427234e-05,
+      "image_field_normalized_l2": 0.26832282543182373,
+      "image_nodes": 16,
+      "layout": "jittered",
+      "miou": 0.0,
+      "text_field_normalized_l2": 0.3194241225719452,
+      "text_nodes": 8
+    },
+    {
+      "accuracy": 0.0,
+      "class_probability_mse": 8.268711098935455e-06,
+      "dense_probability_mse": 9.555015276418999e-05,
+      "image_field_normalized_l2": 0.3019353151321411,
+      "image_nodes": 9,
+      "layout": "jittered",
+      "miou": 0.0,
+      "text_field_normalized_l2": 0.2309478521347046,
+      "text_nodes": 12
+    },
+    {
+      "accuracy": 0.0,
+      "class_probability_mse": 1.413069526279287e-06,
+      "dense_probability_mse": 3.1431354727828875e-05,
+      "image_field_normalized_l2": 0.26371416449546814,
+      "image_nodes": 16,
+      "layout": "jittered",
+      "miou": 0.0,
+      "text_field_normalized_l2": 0.22737374901771545,
+      "text_nodes": 12
+    },
+    {
+      "accuracy": 0.0,
+      "class_probability_mse": 1.5602972780470736e-05,
+      "dense_probability_mse": 6.219832721399143e-05,
+      "image_field_normalized_l2": 0.3013036847114563,
+      "image_nodes": 9,
+      "layout": "random",
+      "miou": 0.0,
+      "text_field_normalized_l2": 0.35254085063934326,
+      "text_nodes": 8
+    },
+    {
+      "accuracy": 0.0,
+      "class_probability_mse": 2.1727562398154987e-06,
+      "dense_probability_mse": 0.00039775832556188107,
+      "image_field_normalized_l2": 0.2967430353164673,
+      "image_nodes": 16,
+      "layout": "random",
+      "miou": 0.0,
+      "text_field_normalized_l2": 0.3893635869026184,
+      "text_nodes": 8
+    },
+    {
+      "accuracy": 0.0,
+      "class_probability_mse": 2.9353586796787567e-05,
+      "dense_probability_mse": 1.8775475837173872e-05,
+      "image_field_normalized_l2": 0.30473557114601135,
+      "image_nodes": 9,
+      "layout": "random",
+      "miou": 0.0,
+      "text_field_normalized_l2": 0.26691871881484985,
+      "text_nodes": 12
+    },
+    {
+      "accuracy": 0.0,
+      "class_probability_mse": 5.055584915680811e-05,
+      "dense_probability_mse": 0.0001302490127272904,
+      "image_field_normalized_l2": 0.29552456736564636,
+      "image_nodes": 16,
+      "layout": "random",
+      "miou": 0.0,
+      "text_field_normalized_l2": 0.2870386838912964,
+      "text_nodes": 12
+    }
+  ],
+  "query_resolution_sweep": [
+    {
+      "accuracy": 0.0,
+      "classification_loss": 1.512513518333435,
+      "dense_loss": 0.4682750999927521,
+      "ece": 0.3343152701854706,
+      "loss": 1.9807886481285095,
+      "miou": 0.0,
+      "observation_resolution": 8,
+      "query_resolution": 6
+    },
+    {
+      "accuracy": 0.0,
+      "classification_loss": 1.512513518333435,
+      "dense_loss": 0.4658689796924591,
+      "ece": 0.3343152701854706,
+      "loss": 1.9783824682235718,
+      "miou": 0.0,
+      "observation_resolution": 8,
+      "query_resolution": 8
+    },
+    {
+      "accuracy": 0.0,
+      "classification_loss": 1.512513518333435,
+      "dense_loss": 0.46925823390483856,
+      "ece": 0.3343152701854706,
+      "loss": 1.98177170753479,
+      "miou": 0.0,
+      "observation_resolution": 8,
+      "query_resolution": 10
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,11 @@
+extends: ../train/e1_cmfo.yaml
+experiment_name: cmfo_e1_b0_patch_transformer
+data:
+  image_resolutions: [24]
+  image_layouts: [regular]
+model:
+  name: b0_patch_transformer
+  node_layout: regular
+train:
+  consistency_weight: 0.0
+

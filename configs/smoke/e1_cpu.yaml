@@ -1,0 +1,55 @@
+experiment_name: cmfo_e1_cpu_smoke
+seed: 17
+
+data:
+  train_size: 8
+  val_size: 4
+  image_resolutions: [8]
+  image_layouts: [regular, jittered]
+  query_resolution: 8
+  base_seed: 1307
+  num_objects: 2
+
+model:
+  name: cmfo
+  hidden_dim: 16
+  num_layers: 1
+  num_heads: 4
+  global_rank: 4
+  coordinate_bands: 3
+  local_radius: 0.5
+  dropout: 0.0
+  text_nodes: 8
+  image_nodes: 16
+  node_layout: random
+  num_classes: 4
+  patch_grid: 2
+  perceiver_latents: 8
+  enable_local: true
+  enable_global: true
+  enable_cross: true
+
+train:
+  epochs: 1
+  batch_size: 2
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  dense_loss_weight: 1.0
+  consistency_weight: 0.05
+  gradient_clip_norm: 1.0
+  num_workers: 0
+  device: cpu
+  amp: false
+  log_every: 1
+
+evaluation:
+  quadrature_layouts: [regular, jittered, random]
+  text_node_counts: [8, 12]
+  image_node_counts: [9, 16]
+  observation_resolutions: [6, 8, 10]
+  observation_layouts: [regular, random]
+  query_resolutions: [6, 8, 10]
+  max_observation_samples: 4
+  calibration_bins: 4
+  latency_warmup: 1
+  latency_repeats: 2

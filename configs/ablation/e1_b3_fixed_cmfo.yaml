@@ -1,0 +1,8 @@
+extends: ../train/e1_cmfo.yaml
+experiment_name: cmfo_e1_b3_fixed_cmfo
+model:
+  name: b3_fixed_cmfo
+  node_layout: regular
+train:
+  consistency_weight: 0.0
+

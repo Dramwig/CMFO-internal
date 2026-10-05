@@ -1,0 +1,11 @@
+extends: ../train/e1_cmfo.yaml
+experiment_name: cmfo_e1_b2_perceiver
+data:
+  image_resolutions: [24]
+  image_layouts: [regular]
+model:
+  name: b2_perceiver
+  node_layout: regular
+train:
+  consistency_weight: 0.0
+

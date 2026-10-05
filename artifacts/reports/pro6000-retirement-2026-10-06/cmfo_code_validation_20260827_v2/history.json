@@ -1,0 +1,21 @@
+[
+  {
+    "epoch": 1,
+    "train": {
+      "accuracy": 0.375,
+      "classification_loss": 1.3877895176410675,
+      "consistency_loss": 0.00026728903412731597,
+      "dense_loss": 0.7228551357984543,
+      "loss": 2.1106580197811127,
+      "miou": 0.025582735426723957
+    },
+    "validation": {
+      "accuracy": 0.0,
+      "classification_loss": 1.5122038125991821,
+      "dense_loss": 0.46577616035938263,
+      "ece": 0.33429673314094543,
+      "loss": 1.9779799580574036,
+      "miou": 0.0
+    }
+  }
+]

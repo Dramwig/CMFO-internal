@@ -1,0 +1,8 @@
+extends: ../train/e1_cmfo.yaml
+experiment_name: cmfo_e1_b4_augmented_transformer
+model:
+  name: b4_augmented_transformer
+  node_layout: regular
+train:
+  consistency_weight: 0.0
+

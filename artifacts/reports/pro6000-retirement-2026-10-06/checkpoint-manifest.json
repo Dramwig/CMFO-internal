@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "project": "CMFO",
+  "archived_at": "2026-10-06",
+  "timezone": "Asia/Shanghai",
+  "source_host": "pro6000",
+  "source_port": 17974,
+  "source_root": "/root/autodl-tmp/CMFO",
+  "purpose": "EXP-000 code validation only; not paper performance results",
+  "verification": "All 11 files size and SHA-256 matched against source",
+  "files": [
+    {
+      "path": "checkpoints/cmfo_code_validation_20260827_v1/best.pt",
+      "size_bytes": 365555,
+      "sha256": "4345785878f70414d7159f0e12d684d298c7103c3dfa9c9c0a00a93d1ff9f814"
+    },
+    {
+      "path": "checkpoints/cmfo_code_validation_20260827_v2/best.pt",
+      "size_bytes": 365747,
+      "sha256": "162cea1664a731b33a379d1dcc9820cd7af02d8fdf9394ec880bc3abbe9d5c7e"
+    },
+    {
+      "path": "records/cmfo_code_validation_20260827_v1/history.json",
+      "size_bytes": 508,
+      "sha256": "bc64144595599fc069f0a2a4ebbe8b3be3ff0b6d9aa3c1cf528255872acf3461"
+    },
+    {
+      "path": "records/cmfo_code_validation_20260827_v1/report.json",
+      "size_bytes": 5790,
+      "sha256": "cd1a09bb9b665f7b4c29b3273d97ba87c5b6a98569584b53a0212df8949e9184"
+    },
+    {
+      "path": "records/cmfo_code_validation_20260827_v1/resolved_config.json",
+      "size_bytes": 1283,
+      "sha256": "30556bce6500db6024ec7630fa6551d8ddcb65b27f375005768adecf445f757d"
+    },
+    {
+      "path": "records/cmfo_code_validation_20260827_v2/history.json",
+      "size_bytes": 508,
+      "sha256": "bc64144595599fc069f0a2a4ebbe8b3be3ff0b6d9aa3c1cf528255872acf3461"
+    },
+    {
+      "path": "records/cmfo_code_validation_20260827_v2/inspect.json",
+      "size_bytes": 119,
+      "sha256": "c38b477d53f07d42512da38996237a979c17545fbc524feadbf6c5f0fd00d9d5"
+    },
+    {
+      "path": "records/cmfo_code_validation_20260827_v2/reevaluation.json",
+      "size_bytes": 8030,
+      "sha256": "75d2aa0414050d369a2a0c2f502f50996f7a4674ede67afee7e1902d44597d52"
+    },
+    {
+      "path": "records/cmfo_code_validation_20260827_v2/reevaluation_weights_only.json",
+      "size_bytes": 8029,
+      "sha256": "40f877f58f1d92ccaa66618438acdf45702ff59ab4f8ff0c1f522a136557494b"
+    },
+    {
+      "path": "records/cmfo_code_validation_20260827_v2/report.json",
+      "size_bytes": 9168,
+      "sha256": "eebaac55db7a090127302a1db19ad5c8adc8dcc5f2b12b30d878594444a3c00a"
+    },
+    {
+      "path": "records/cmfo_code_validation_20260827_v2/resolved_config.json",
+      "size_bytes": 1513,
+      "sha256": "aab2ff0dce21c66fadde67befd36135fa8b8fb99909f8385dd3235d37b2a6f45"
+    }
+  ]
+}

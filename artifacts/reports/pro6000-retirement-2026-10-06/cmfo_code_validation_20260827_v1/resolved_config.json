@@ -1,0 +1,68 @@
+{
+  "data": {
+    "base_seed": 1307,
+    "image_layouts": [
+      "regular",
+      "jittered"
+    ],
+    "image_resolutions": [
+      8
+    ],
+    "num_objects": 2,
+    "query_resolution": 8,
+    "train_size": 8,
+    "val_size": 4
+  },
+  "evaluation": {
+    "calibration_bins": 4,
+    "image_node_counts": [
+      9,
+      16
+    ],
+    "latency_repeats": 2,
+    "latency_warmup": 1,
+    "quadrature_layouts": [
+      "regular",
+      "jittered",
+      "random"
+    ],
+    "text_node_counts": [
+      8,
+      12
+    ]
+  },
+  "experiment_name": "cmfo_e1_cpu_smoke",
+  "model": {
+    "coordinate_bands": 3,
+    "dropout": 0.0,
+    "enable_cross": true,
+    "enable_global": true,
+    "enable_local": true,
+    "global_rank": 4,
+    "hidden_dim": 16,
+    "image_nodes": 16,
+    "local_radius": 0.5,
+    "name": "cmfo",
+    "node_layout": "random",
+    "num_classes": 4,
+    "num_heads": 4,
+    "num_layers": 1,
+    "patch_grid": 2,
+    "perceiver_latents": 8,
+    "text_nodes": 8
+  },
+  "seed": 17,
+  "train": {
+    "amp": false,
+    "batch_size": 2,
+    "consistency_weight": 0.05,
+    "dense_loss_weight": 1.0,
+    "device": "cpu",
+    "epochs": 1,
+    "gradient_clip_norm": 1.0,
+    "learning_rate": 0.001,
+    "log_every": 1,
+    "num_workers": 0,
+    "weight_decay": 0.0001
+  }
+}

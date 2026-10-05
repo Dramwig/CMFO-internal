@@ -1,0 +1,55 @@
+experiment_name: cmfo_e1_controlled
+seed: 17
+
+data:
+  train_size: 2048
+  val_size: 512
+  image_resolutions: [16, 24, 32]
+  image_layouts: [regular, jittered, random]
+  query_resolution: 24
+  base_seed: 1307
+  num_objects: 2
+
+model:
+  name: cmfo
+  hidden_dim: 64
+  num_layers: 4
+  num_heads: 4
+  global_rank: 8
+  coordinate_bands: 6
+  local_radius: 0.35
+  dropout: 0.05
+  text_nodes: 48
+  image_nodes: 64
+  node_layout: random
+  num_classes: 4
+  patch_grid: 8
+  perceiver_latents: 32
+  enable_local: true
+  enable_global: true
+  enable_cross: true
+
+train:
+  epochs: 20
+  batch_size: 16
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+  dense_loss_weight: 1.0
+  consistency_weight: 0.1
+  gradient_clip_norm: 1.0
+  num_workers: 4
+  device: auto
+  amp: true
+  log_every: 20
+
+evaluation:
+  quadrature_layouts: [regular, jittered, random]
+  text_node_counts: [24, 48, 72]
+  image_node_counts: [36, 64, 100]
+  observation_resolutions: [16, 24, 32, 40, 56]
+  observation_layouts: [regular, jittered, random]
+  query_resolutions: [16, 24, 32, 40]
+  max_observation_samples: 128
+  calibration_bins: 10
+  latency_warmup: 5
+  latency_repeats: 20
